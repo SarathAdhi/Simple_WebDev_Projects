@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <footer class="footer">
+        <div class="footer-menu"> <!-- Main class .footer-menu-display -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Clubs</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search here"/>
+        </div>
+        <div class="footer-container">
+            <button onclick="displayMenu();"><img class="footer-start" src="https://img.icons8.com/color/48/000000/windows-11.png"/></button>
+            <button onclick="displaySearch();"><img style="transform: scaleX(-1);" class="footer-search" src="https://www.freeiconspng.com/uploads/search-icon-png-19.png"/></button>
+        </div>
+    </footer>
+</body>
+<script>
+    function displayMenu(){
+        document.querySelector('.footer-menu').classList.toggle('footer-menu-display')
+        document.querySelector('.footer-start').classList.toggle('footer-button-change')
+    }
+    function displaySearch(){
+        document.querySelector('.search-container').classList.toggle('search-container-display')
+        document.querySelector('.footer-search').classList.toggle('footer-button-change')
+    }
+</script>
+</html>

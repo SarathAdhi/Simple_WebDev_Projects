@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const url = "https://codes-info-api.herokuapp.com/users";
+
+
+        //display
+    fetch(url).then(package => package.json())
+    .then(data => console.log(data))
+
+
+            //post
+    fetch(url, {
+        method:"POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            id: "",
+            first_name: "sara",
+            last_name: "Gingaaaalell",
+            email: "jginglell0@saratg.org",
+            gender: "male",
+            })
+        }).then(result => {
+            console.log("Completed with result:", result);
+        }).catch(err => {
+            console.error(err);
+        });
+
+
+        // delete
+    var myDataObject = "/3"
+    fetch(url + myDataObject, {
+        method: 'DELETE',
+      })
+      .then(res => res.json()) // or res.json()
+      .then(res => console.log(res))
+</script>
+</html>

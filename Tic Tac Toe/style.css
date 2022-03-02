@@ -1,0 +1,61 @@
+#container{
+    margin-top: 250px;
+}
+#XorO{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#XorO input{
+    width: 50px;
+    height: 50px;
+}
+#board{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#row1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
+#row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#row2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}
+#row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#row3 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+}

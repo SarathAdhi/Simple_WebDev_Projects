@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<input type="file" id="myFile" name="filename">  
+<br><br>
+
+<label><b>Your Converted Text:</b></label><br><br>
+
+<textarea cols="30" name="original" rows="10" style="width: 100%;" id="convertedText">
+</textarea>
+
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+
+<script>  
+
+    var myFile = document.getElementById('myFile');
+    myFile.addEventListener('change', recognizeText);
+
+    async function recognizeText({ target: { files }  }) {
+        Tesseract.recognize(files[0]).then(function(result) {
+            console.log("recognizeText: result.text:", result.text);
+            document.getElementById("convertedText").value = result.text;
+        });
+    }
+
+</script>
+        
+</body>
+</html>

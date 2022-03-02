@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="XorO">
+            <input type="button" id="X" value="X" onclick="getUserChoice(this.id);">
+            &nbsp;&nbsp;&nbsp;
+            <input type="button" id="O" value="O" onclick="getUserChoice(this.id);">
+        </div>
+
+        <div id="board">
+            <div id="row1">
+
+                <div id="a00" onclick="displayXO(this.id);"></div>
+                <div id="a01" onclick="displayXO(this.id);"></div>
+                <div id="a02" onclick="displayXO(this.id);"></div>
+
+            </div>
+
+            <div id="row2">
+
+                <div id="a10" onclick="displayXO(this.id);"></div>
+                <div id="a11" onclick="displayXO(this.id);"></div>
+                <div id="a12" onclick="displayXO(this.id);"></div>
+
+            </div>
+
+            <div id="row3">
+
+                <div id="a20" onclick="displayXO(this.id);"></div>
+                <div id="a21" onclick="displayXO(this.id);"></div>
+                <div id="a22" onclick="displayXO(this.id);"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
